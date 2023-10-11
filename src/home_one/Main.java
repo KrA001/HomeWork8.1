@@ -31,8 +31,9 @@ public class Main {
                 golf
         );
         cars.cars(cars);
-        mazda.mazda(mazda);
-        mazda2.mazda(mazda2);
         mazda.cars(cars, mazda);
+        mazda.cars(cars, mazda2);
+        mazda2.mazda(mazda2);
+        mazda.mazda(mazda);
     }
 }
