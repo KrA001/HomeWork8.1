@@ -1,4 +1,5 @@
-package Home2;
+package home_two;
+
 public class Shelter {
     private String name;
 
@@ -13,15 +14,7 @@ public class Shelter {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getAddress() {
         return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 }

@@ -1,16 +1,16 @@
-package Home2;
-public final class Dog extends Pet{
+package home_two;
+
+public final class Dog extends Pet {
 
 
     private String name;
     private String breed;
     private String commands;
 
-//    @Override
-//    public String getInfo() {
-//        return super.getInfo() + "name: " + getName() +
-//                "breed: " + getBreed() + "commands " + getCommands();
-//    }
+    public String name() {
+        return super.getInfo() + "name: " + getName() +
+                "breed: " + getBreed() + "commands " + getCommands();
+    }
 
     public String getName() {
         return name;
@@ -41,12 +41,14 @@ public final class Dog extends Pet{
         this.breed = breed;
         this.commands = commands;
     }
+
     public Dog(String name, String breed, Color color, Shelter shelter) {
         this.name = name;
         this.breed = breed;
         setColor(color);
         setShelter(shelter);
     }
+
     public Dog(String name, String breed, Color color, Shelter shelter, String commands) {
         this.name = name;
         this.breed = breed;
@@ -54,10 +56,12 @@ public final class Dog extends Pet{
         setColor(color);
         setShelter(shelter);
     }
-    void makeVoice(String voice, int number){
-        System.out.println(voice);
-    }
-    void makeVoice(String voice, int number, String ba){
 
+    void makeVoice(String voice, int number) {
+        System.out.println(voice + number);
+    }
+
+    void makeVoice(String voice, int number, String commands) {
+        System.out.println(voice + number + commands);
     }
 }

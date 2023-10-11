@@ -1,10 +1,9 @@
-package Home1;
+package home_two;
 
-public enum ColorCar {
+public enum Color {
     BLACK,
     WHITE,
     GRAY,
     BROWN;
+
 }
-
-

@@ -1,4 +1,4 @@
-package Home1;
+package home_one;
 
 public class Transport {
     private String model;
@@ -6,16 +6,17 @@ public class Transport {
     private String engine;
     private int maxSpeed;
     private int privod;
-
     private ColorCar colorCar;
+    private Golf numberCar;
 
-    public Transport(String model, int wheels, String engine, int maxSpeed, int privod, ColorCar colorCar) {
+    public Transport(String model, int wheels, String engine, int maxSpeed, int privod, ColorCar colorCar, Golf numberCar) {
         this.model = model;
         this.wheels = wheels;
         this.engine = engine;
         this.maxSpeed = maxSpeed;
         this.privod = privod;
         this.colorCar = colorCar;
+        this.numberCar = numberCar;
     }
 
     public String getModel() {
@@ -40,5 +41,9 @@ public class Transport {
 
     public ColorCar getColorCar() {
         return colorCar;
+    }
+
+    public Golf getNumberCar() {
+        return numberCar;
     }
 }
